@@ -1,6 +1,86 @@
-@import "./fonts.css";
-@import "./normalize.css";
-@import "./custom-properties.css";
+:root {
+    --basic-red: #EE3643;
+    --basic-green: #63A63E;
+    --basic-greendarky: #367315;
+    --basic-greydark: #293449;
+    --basic-grey: #3D546F;
+    --basic-grey-darklighty: #32425C;
+    --basic-grey-darklight: #405069;
+    --basic-greylight: #C5C5C5;
+    --basic-yellowlight: #F9F5F0;
+    --basic-greylighty: #F1F5F7;
+    --basic-white: #FFFFFF;
+    --basic-yellow: #FFC047;
+    --basic-whitetranslucent: rgba(255, 255, 255, 0.3);
+    --basic-greytranslucent: rgba(0, 0, 0, 0.25);
+    --special-yellow: #FFBF47;
+    --special-blue: #3BBcE3;
+    --special-lilac: #DC91D8;
+    --special-greenlight: #8ED78F;
+    --special-yellowlight: #FFD180;
+    --special-green: #5FBB2D;
+    --special-greendarky: #518534;
+    --special-greydark: #161D29;
+    --special-redlight: #CA2C37;
+    --special-red: #BA2732;
+    --special-greylight: #EAEAEA;
+    --special-greydarky: #A9A9A9;
+    --special-greylighty: #F3F7F9;
+    --special-greytranslucent: rgba(0, 0, 0, 0.15);
+    --special-whitetranslucent: rgba(255, 255, 255, 0.5);
+}
+
+/* cuprum-regular - latin_cyrillic */
+@font-face {
+	font-family: 'Cuprum';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Cuprum Regular'), local('Cuprum-Regular'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-regular.woff2') format('woff2'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-regular.woff') format('woff');
+	font-display: swap;
+}
+/* cuprum-700 - latin_cyrillic */
+@font-face {
+	font-family: 'Cuprum';
+	font-style: normal;
+	font-weight: 700;
+	src: local('Cuprum Bold'), local('Cuprum-Bold'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-700.woff2') format('woff2'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-700.woff') format('woff');
+	font-display: swap;
+}
+/* cuprum-italic - latin_cyrillic */
+@font-face {
+	font-family: 'Cuprum';
+	font-style: italic;
+	font-weight: 400;
+	src: local('Cuprum Italic'), local('Cuprum-Italic'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-italic.woff2') format('woff2'),
+		 url('../fonts/cuprum-v12-latin_cyrillic-italic.woff') format('woff');
+	font-display: swap;
+}
+
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 400;
+	src: local('PT Sans'), local('PTSans-Regular'),
+		 url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff2') format('woff2'),
+		 url('../fonts/pt-sans-v12-latin_cyrillic-regular.woff') format('woff');
+	font-display: swap;
+}
+  /* pt-sans-700 - latin_cyrillic */
+@font-face {
+	font-family: 'PT Sans';
+	font-style: normal;
+	font-weight: 700;
+	src: local('PT Sans Bold'), local('PTSans-Bold'),
+		 url('../fonts/pt-sans-v12-latin_cyrillic-700.woff2') format('woff2'),
+		 url('../fonts/pt-sans-v12-latin_cyrillic-700.woff') format('woff');
+	font-display: swap;
+}
 
 body {
     font-family: "Cuprum", Arial, sans-serif;
@@ -139,7 +219,7 @@ body {
     opacity: 0.5;
 }
 
-.assortment-item h3{
+.assortment-item h3 {
     font-weight: bold;
     font-size: 24px;
     line-height: 30px;
@@ -172,7 +252,6 @@ body {
     padding: 10px 0;
     text-align: center;
     background-color: var(--basic-whitetranslucent);
-    mix-blend-mode: normal;
     color: var(--basic-white);
     text-transform: uppercase;
     text-decoration: none;
@@ -180,13 +259,11 @@ body {
 
 .assortment-item-link:hover {
     background-color: var(--basic-greylight);
-    mix-blend-mode: normal;
     opacity: 0.3;
 }
 
 .assortment-item-link:active {
     background-color: var(--special-greydarky);
-    mix-blend-mode: normal;
     opacity: 0.3;
 }
 
@@ -209,11 +286,12 @@ body {
     color: var(--basic-white);
 }
 
-.catalog-link,
+/* .catalog-link,
 .popular-product-link,
-.all-manufacturers-link,
+.ƒ`,
 .more-about-company-link,
-.write-us-link {
+.write-us-link  */
+.attention-link {
     display: inline-block;
     width: 192px;
     background-color: var(--basic-red);
@@ -232,13 +310,11 @@ body {
     background-color: var(--special-red);
 }
 
-.popular-product-caption-wrapper,
-.popular-manufacturers-caption-wrapper {
+.popular-caption-wrapper{
     background-color: var(--basic-yellowlight);
 }
 
-.popular-product-caption,
-.popular-manufacturers-caption {
+.popular-caption {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
@@ -350,49 +426,40 @@ body {
     background-color: var(--basic-greylighty) ;
 }
 
-.services-caption,
-.slider-service-caption,
-.about-company-caption,
-.contacts-caption {
+.section-caption {
     font-size: 30px;
     line-height: 30px;
     text-transform: uppercase;
 }
 
-.slider-service-caption {
-    font-size: 30px;
-    line-height: 30px;
-    text-transform: uppercase;
+.slider-caption {
     color: var(--basic-grey-darklighty);
 }
 
-.services-description,
-.slider-service-description,
-.about-company-description,
-.contacts-description {
+.description {
     font-size: 13px;
     line-height: 24px;
     font-family: "PT Sans", Arial, sans-serif;
 }
 
-.slider-service-list-item {
+.slider-service-item {
     color: var(--basic-white);
     background-color: var(--basic-grey-darklighty);
     box-shadow: 0px 1px 0px var(--basic-greydark), inset 0px 1px 0px var(--basic-grey-darklight);
 }
 
-.slider-service-list-item:hover {
+.slider-service-item:hover {
     background-color: var(--basic-greydark);
     box-shadow: none;
 }
 
-.slider-service-list-item:active {
+.service-item-active {
     background-color: var(--basic-white);
     color: var(--basic-grey-darklighty);
     box-shadow: none;
 }
 
-.slider-service-list-item a {
+.slider-service-item a {
     color: inherit;
     text-decoration: none;
     font-weight: bold;
@@ -425,7 +492,6 @@ body {
 
 .footer-nav a:active,
 .footer-product-list a:active {
-    mix-blend-mode: normal;
     opacity: 0.5;
     text-decoration: none;
 }
@@ -450,19 +516,16 @@ body {
     color: var(--basic-white);
 }
 
-.feedback-link,
-.developers-link {
+.footer-bottom-link {
     color: var(--special-yellowlight);
     text-decoration: none;
 }
 
-.feedback-link:hover,
-.developers-link:hover {
+.footer-bottom-link:hover {
     text-decoration: underline;
 }
 
-.feedback-link:active,
-.developers-link:active {
+.footer-bottom-link:active {
     color: var(--basic-red);
     text-decoration: none;
 }
