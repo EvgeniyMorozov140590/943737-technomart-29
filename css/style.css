@@ -739,3 +739,24 @@ input[type=radio]:disabled + .filter-label {
 .slide-current {
 	display: block;
 }
+
+.logo-wrapper {
+	width: 220px;
+	height: 47px;
+	display: flex;
+	justify-content: center;
+	background: #EE3643;
+	box-shadow: inset 0px -5px 0px var(--basic-greytranslucent);
+}
+
+.header-logo {
+	margin-top: 13px;
+}
+
+.footer-logo {
+	margin-top: 21px;
+}
+
+.footer-logo-resize {
+	height: 68px;
+}
