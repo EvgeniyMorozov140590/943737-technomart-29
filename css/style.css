@@ -421,6 +421,11 @@ body {
 }
 
 .manufacturers-list-item {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 220px;
+	height: 145px;
 	border: 1px solid var(--special-greylight);
 	box-sizing: border-box;
 }
@@ -679,4 +684,58 @@ input[type=radio]:disabled + .filter-label {
 
 .about-products {
 	background-color: var(--basic-greylighty);
+}
+
+.slider-product {
+	width:	620px;
+	height: 266px;
+	position: relative;
+}
+
+.slider-controls {
+	position: absolute;
+	z-index: 20;
+}
+
+.slide-perforators {
+	background-image: url("../img/perforators.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.slide-drills {
+	background-image: url("../img/drills.jpg");
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+.slide-delivery {
+	background-image: url("../img/delivery.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.slide-credit {
+	background-image: url("../img/credit.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.slide-guarantee {
+	background-image: url("../img/guarantee.png");
+	background-repeat: no-repeat;
+	background-position: bottom center;
+}
+
+.slide-content {
+	width: 710px;
+	height: 285px;
+}
+
+.slide {
+	display: none;
+}
+
+.slide-current {
+	display: block;
 }
