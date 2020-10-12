@@ -127,14 +127,14 @@ body {
 	line-height: 24px;
 }
 
-.flex-between-center {
+.flexible-between-center {
 	align-items: center;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
 }
 
-.flex-between-end {
+.flexible-between-end {
 	align-items: flex-end;
 	display: flex;
 	justify-content: space-between;
@@ -385,6 +385,7 @@ body {
 
 .popular-caption-wrapper {
 	background-color: var(--basic-yellowlight);
+	margin-bottom: 20px;
 }
 
 .popular-caption,
@@ -430,6 +431,7 @@ body {
 	box-sizing: border-box;
 	width: 220px;
 	min-height: 318px;
+	margin-bottom: 20px;
 }
 
 .product-name {
@@ -489,7 +491,8 @@ body {
 	width: 220px;
 	height: 145px;
 	border: 1px solid var(--special-greylight);
-	box-sizing: content-box;
+	box-sizing: border-box;
+	margin-bottom: 20px;
 }
 
 .manufacturers-list-item:hover {
