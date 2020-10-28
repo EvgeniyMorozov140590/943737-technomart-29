@@ -14,6 +14,7 @@
 	--basic-greylighty: #F1F5F7;
 	--basic-grey-verylighty: #E5E5E5;
 	--basic-grey-verylight: #F2F6F8;
+	--basic-grey-middlelight: #ababab;
 	--basic-white: #FFFFFF;
 	--basic-yellow: #FFC047;
 	--basic-whitetranslucent: rgba(255, 255, 255, 0.3);
@@ -25,14 +26,17 @@
 	--special-greenlight: #8ED78F;
 	--special-yellowlight: #FFD180;
 	--special-green: #5FBB2D;
+	--special-greenlight: #00ca74;
 	--special-greendarky: #518534;
 	--special-greydark: #161D29;
 	--special-redlight: #CA2C37;
 	--special-red: #BA2732;
+	--special-iron: #d7dcde;
 	--special-greylight: #EAEAEA;
 	--special-greydarky: #A9A9A9;
 	--special-grey-verylighty: #B5B5B5;
 	--special-greylighty: #F3F7F9;
+	--special-grey-verylight: #cfcfcf;
 	--special-greytranslucent: rgba(0, 0, 0, 0.15);
 	--special-whitetranslucent: rgba(255, 255, 255, 0.5);
 }
@@ -770,7 +774,9 @@ body {
 
 .product-image-resize {
 	width: 184px;
-	height: 170px;
+	min-height: 170px;
+	object-fit: contain;
+	max-width: 100%;
 	margin-bottom: 8px;
 }
 
@@ -792,6 +798,8 @@ body {
 	font-family: "PT Sans", Arial, sans-serif;
 	font-style: normal;
 	font-weight: bold;
+	padding: 0 30px;
+	word-break: break-word;
 	font-size: 18px;
 	line-height: 20px;
 	margin-top: 0;
@@ -1053,10 +1061,29 @@ body {
 }
 
 .social-link {
+	display: inline-block;
 	width: 44px;
 	height: 44px;
 	border-radius: 50%;
 	background-color: var(--basic-greydarky);
+}
+
+.icon-vk {
+	background-image: url("../img/vk_logo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-facebook {
+	background-image: url("../img/facebook_logo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.icon-instagram {
+	background-image: url("../img/instagram_logo.svg");
+	background-position: center;
+	background-repeat: no-repeat;
 }
 
 .social-link:hover {
@@ -1518,7 +1545,7 @@ input[type=radio]:disabled + .filter-label {
 	height: 47px;
 	display: flex;
 	justify-content: center;
-	background: #EE3643;
+	background: var(--basic-red);
 	box-shadow: inset 0px -5px 0px var(--basic-greytranslucent);
 }
 
@@ -1558,21 +1585,19 @@ input[type=radio]:disabled + .filter-label {
 	position: relative;
 	height: 41px;
 	margin-bottom: 9px;
-	padding-top: 39px;
-	padding-right: 20px;
-	padding-left: 20px;
+	padding: 39px 20px 0 20px;
 	border-radius: 5px;
 }
 
 .range-controls .scale {
 	height: 2px;
-	background: #d7dcde;
+	background-color: var(--special-iron);
 }
 
 .range-controls .bar {
 	width: 70%;
 	height: 2px;
-	background: #00ca74;
+	background: var(--special-greenlight);
 }
 
 .range-controls .toggle {
@@ -1582,10 +1607,10 @@ input[type=radio]:disabled + .filter-label {
 	width: 4px;
 	height: 4px;
 	padding: 0;
-	border: 8px solid #ffffff;
-	background-color: #ababab;
+	border: 8px solid var(--basic-white);
+	background-color: var(--basic-grey-middlelight);
 	border-radius: 50%;
-	box-shadow: 0 2px 1px 0 #cfcfcf;
+	box-shadow: 0 2px 1px 0 var(--special-grey-verylight);
 	cursor: pointer;
 }
 
