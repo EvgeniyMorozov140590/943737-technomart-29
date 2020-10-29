@@ -2,7 +2,7 @@ var productSlider = (function() {
 	let activeSlideIndex = 0;
 
 	return {
-		create: function (config) {
+		create: function(config) {
 			init(config);
 		}
 	};

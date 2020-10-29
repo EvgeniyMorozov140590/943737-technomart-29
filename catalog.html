@@ -11,11 +11,12 @@
 <body class="page-body">
 	<header class="main-header">
 		<div class="container flexible-relativity-end">
-			<a class="logo-wrapper logo-left-position" href="index.html">
+			<a class="logo-wrapper logo-left-position" href="index.html" aria-label="техномарт">
 				<img class="header-logo" src="./img/logo-text.svg" width="107" height="17" alt="техномарт">
 			</a>
 			<div class="search-input-wrapper">
-				<input class="field field-search" type="search" name="search-text" placeholder="Поиск:">
+				<label for="search" aria-label="Поиск"></label>
+				<input class="field field-search" id="search" type="search" name="search-text" placeholder="Поиск:">
 				<svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd"
 						d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z" />
@@ -52,7 +53,7 @@
 						</svg>
 						Равшан Джамшутович
 					</a>
-					<a class="log-out flexible-between-center" href="">
+					<a class="log-out flexible-between-center" href="" aria-label="выйти">
 						<svg xmlns="http://www.w3.org/2000/svg" width="20" height="17" viewBox="0 0 20 17" fill="none">
 							<path d="M20 8.5L11.125 0V6H5.125V11H11.125V17L20 8.5Z" fill="#C5C5C5" />
 							<path
@@ -85,7 +86,7 @@
 		<div class="container">
 			<ul class="list breadcrumbs flexible-start-center">
 				<li>
-					<a href="index.html">
+					<a href="index.html" aria-label="вернуться на главную страницу">
 						<svg xmlns="http://www.w3.org/2000/svg" width="14" height="12" viewBox="0 0 14 12" fill="none">
 							<path d="M2 7.99999V12H6V7.99999H8V12H12V7.99999L7 3.51599L2 7.99999Z" fill="#C1C6CE" />
 							<path
@@ -104,74 +105,74 @@
 		</div>
 		<div class="container flexible-between-start">
 			<section class="filter flexible-start-center">
-				<div class="filter-caption-wrapper yellowlighty-highlight-wrapper">
-					<h2 class="catalog-section-caption">фильтр:</h2>
-				</div>
-				<section class="filter-price">
-					<h3 class="visibility-hidden">Фильтр по цене</h3>
-					<fieldset class="filter-item">
-						<legend class="filter-type-caption">Цена:</legend>
-						<div class="range-filter">
-							<div class="range-controls yellowlighty-highlight-wrapper">
-								<div class="scale">
-									<div class="bar" style="width: 80%; margin-left: 0"></div>
+				<form action="https://echo.htmlacademy.ru" method="POST">
+					<div class="filter-caption-wrapper yellowlighty-highlight-wrapper">
+						<h2 class="catalog-section-caption">фильтр:</h2>
+					</div>
+					<section class="filter-price">
+						<h3 class="visibility-hidden">Фильтр по цене</h3>
+						<fieldset class="filter-item">
+							<legend class="filter-type-caption">Цена:</legend>
+							<div class="range-filter">
+								<div class="range-controls yellowlighty-highlight-wrapper">
+									<div class="scale">
+										<div class="bar" style="width: 80%; margin-left: 0"></div>
+									</div>
+									<div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
+									<div class="toggle toggle-max" tabindex="0" style=" left: 73%"></div>
 								</div>
-								<div class="toggle toggle-min" tabindex="0" style="left: 8%"></div>
-								<div class="toggle toggle-max" tabindex="0" style=" left: 73%"></div>
-							</div>
-							<div class="flexible-between-center">
-								<label>
-									<input type="text" class="filter-price-value yellowlighty-highlight-wrapper"
+								<div class="flexible-between-center">
+									<label for="minimal-price"></label>
+									<input type="text" id="minimal-price" class="filter-price-value yellowlighty-highlight-wrapper"
 										name="min-price" value="0">
-								</label>
-								<p class="price-separator">&mdash;</p>
-								<label>
-									<input type="text" class="filter-price-value yellowlighty-highlight-wrapper"
+									<p class="price-separator">&mdash;</p>
+									<label for="maximal-price"></label>>
+									<input type="text" id="maximal-price" class="filter-price-value yellowlighty-highlight-wrapper"
 										name="max-price" value="30000">
-								</label>
+								</div>
 							</div>
-						</div>
-					</fieldset>
-				</section>
-				<section class="filter-manufacturers">
-					<h3 class="filter-type-caption">производители:</h3>
-					<ul class="list flexible-column">
-						<li class="filter-list-item">
-							<input class="filter-checkbox-input visibility-hidden" type="checkbox" id="bosch" checked>
-							<label class="filter-label" for="bosch">bosch</label>
-						</li>
-						<li class="filter-list-item">
-							<input class="filter-checkbox-input visibility-hidden" id="interskol" type="checkbox" name="interskol">
-							<label class="filter-label" for="interskol">интерскол</label>
-						</li>
-						<li class="filter-list-item">
-							<input class="filter-checkbox-input visibility-hidden" id="makita" type="checkbox" name="makita" checked>
-							<label class="filter-label" for="makita">makita</label>
-						</li>
-						<li class="filter-list-item">
-							<input class="filter-checkbox-input visibility-hidden" id="dewalt" type="checkbox" name="dewalt" disabled>
-							<label class="filter-label" for="dewalt">dewalt</label>
-						</li>
-						<li class="filter-list-item">
-							<input class="filter-checkbox-input visibility-hidden" id="hitachi" type="checkbox" name="hitachi">
-							<label class="filter-label" for="hitachi">hitachi</label>
-						</li>
-					</ul>
-				</section>
-				<section class="filter-power flexible-column">
-					<h3 class="filter-type-caption">питание:</h3>
-					<ul class="list flexible-column">
-						<li class="filter-list-item">
-							<input class="filter-radio-input visibility-hidden" id="battery-power" type="radio" name="power" checked>
-							<label class="filter-label" for="battery-power">аккумуляторные</label>
-						</li>
-						<li class="filter-list-item">
-							<input class="filter-radio-input visibility-hidden" id="power-supply" type="radio" name="power">
-							<label class="filter-label" for="power-supply">сетевые</label>
-						</li>
-					</ul>
-				</section>
-				<button class="button button-show" type="button">показать</button>
+						</fieldset>
+					</section>
+					<section class="filter-manufacturers">
+						<h3 class="filter-type-caption">производители:</h3>
+						<ul class="list flexible-column">
+							<li class="filter-list-item">
+								<input class="filter-checkbox-input visibility-hidden" type="checkbox" name="bosch" id="bosch" checked>
+								<label class="filter-label" for="bosch">bosch</label>
+							</li>
+							<li class="filter-list-item">
+								<input class="filter-checkbox-input visibility-hidden" id="interskol" type="checkbox" name="interskol">
+								<label class="filter-label" for="interskol">интерскол</label>
+							</li>
+							<li class="filter-list-item">
+								<input class="filter-checkbox-input visibility-hidden" id="makita" type="checkbox" name="makita" checked>
+								<label class="filter-label" for="makita">makita</label>
+							</li>
+							<li class="filter-list-item">
+								<input class="filter-checkbox-input visibility-hidden" id="dewalt" type="checkbox" name="dewalt" disabled>
+								<label class="filter-label" for="dewalt">dewalt</label>
+							</li>
+							<li class="filter-list-item">
+								<input class="filter-checkbox-input visibility-hidden" id="hitachi" type="checkbox" name="hitachi">
+								<label class="filter-label" for="hitachi">hitachi</label>
+							</li>
+						</ul>
+					</section>
+					<section class="filter-power flexible-column">
+						<h3 class="filter-type-caption">питание:</h3>
+						<ul class="list flexible-column">
+							<li class="filter-list-item">
+								<input class="filter-radio-input visibility-hidden" id="battery-power" type="radio" name="power" checked>
+								<label class="filter-label" for="battery-power">аккумуляторные</label>
+							</li>
+							<li class="filter-list-item">
+								<input class="filter-radio-input visibility-hidden" id="power-supply" type="radio" name="power">
+								<label class="filter-label" for="power-supply">сетевые</label>
+							</li>
+						</ul>
+					</section>
+					<button class="button button-show" type="submit">показать</button>
+				</form>
 			</section>
 			<section class="products">
 				<h2 class="visibility-hidden">продукты</h2>
@@ -183,13 +184,13 @@
 						<li><a class="sort-option" href="">по функционалу</a></li>
 					</ul>
 					<div class="sort-direction-wrapper flexible-between-center">
-						<button class="button sort-direction sort-direction-up sort-direction-active">
+						<button class="button sort-direction sort-direction-up sort-direction-active" aria-label="сортировка по возрастанию">
 							<svg class="sort-direction-icon" fill="none" width="11" height="10" viewBox="0 0 11 10"
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.5 10L0 0H11" fill="#C5C5C5" />
 							</svg>
 						</button>
-						<button class="button sort-direction">
+						<button class="button sort-direction" aria-label="сортировка по убыванию">
 							<svg class="sort-direction-icon" fill="none" width="11" height="10" viewBox="0 0 11 10"
 								xmlns="http://www.w3.org/2000/svg">
 								<path d="M5.5 10L0 0H11" fill="#C5C5C5" />
@@ -202,8 +203,8 @@
 					<ul class="list product-list flexible-between-center">
 						<li class="product-item flexible-column-center">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -219,8 +220,8 @@
 						</li>
 						<li class="product-item flexible-column-center">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -236,8 +237,8 @@
 						</li>
 						<li class="product-item flexible-column-center badge-new">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -253,8 +254,8 @@
 						</li>
 						<li class="product-item flexible-column-center badge-new">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg3000.jpg" width="127" height="112" alt="bfg 3000">
@@ -270,8 +271,8 @@
 						</li>
 						<li class="product-item flexible-column-center">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -287,8 +288,8 @@
 						</li>
 						<li class="product-item flexible-column-center badge-new">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg2000.jpg" width="127" height="112" alt="bfg 2000">
@@ -303,8 +304,8 @@
 						</li>
 						<li class="product-item flexible-column-center badge-new">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg3000.jpg" width="127" height="112" alt="bfg 3000">
@@ -320,8 +321,8 @@
 						</li>
 						<li class="product-item flexible-column-center">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -337,8 +338,8 @@
 						</li>
 						<li class="product-item flexible-column-center badge-new">
 							<div class="product-action-wrapper">
-								<button class="button button-buy">купить</button>
-								<button class="button button-bookmarks">закладки</button>
+								<button class="button button-buy" aria-label="купить">купить</button>
+								<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 							</div>
 							<div class="product-image-resize flexible-centered">
 								<img src="./img/bfg2000.jpg" width="127" height="112" alt="bfg 2000">
@@ -387,7 +388,7 @@
 	<footer>
 		<div class="footer-top-container">
 			<div class="container flexible-between-end">
-				<a class="logo-wrapper footer-logo-resize" href="index.html">
+				<a class="logo-wrapper footer-logo-resize" href="index.html" aria-label="техномарт">
 					<img class="footer-logo" src="./img/logo-text.svg" width="136" height="21" alt="техномарт">
 				</a>
 				<section class="footer-nav">
@@ -438,13 +439,13 @@
 					<h2 class="visibility-hidden">Мы в соц.сетях</h2>
 					<ul class="list social-network-list flexible-between-center">
 						<li>
-							<a class="social-link icon-vk" href="#"></a>
+							<a class="social-link icon-vk" href="#" aria-label="мы вк"></a>
 						</li>
 						<li>
-							<a class="social-link icon-facebook" href="#"></a>
+							<a class="social-link icon-facebook" href="#" aria-label="мы в facebook"></a>
 						</li>
 						<li>
-							<a class="social-link icon-instagram" href="#"></a>
+							<a class="social-link icon-instagram" href="#" aria-label="мы в instagram"></a>
 						</li>
 					</ul>
 				</section>
@@ -454,11 +455,24 @@
 				</p>
 				<p class="developed">
 					Разработано —<br>
-					<a class="footer-bottom-link" href="http://htmlacademy.ru">htmlacademy.ru</a>
+					<a class="footer-bottom-link" href="http://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				</p>
 			</div>
 		</div>
 	</footer>
+
+	<section class="modal modal-add-into-cart visibility-hidden">
+		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+		<div class="modal-content flexible-centered">
+			<h2>Товар добавлен в корзину!</h2>
+		</div>
+		<div class="modal-actions flexible-centered">
+			<button class="button modal-action-button" type="submit">оформить заказ</button>
+			<button class="button modal-action-button modal-cancel-button" type="submit">продолжить покупки</button>
+		</div>
+	</section>
+	<script src="./js/modal.js"></script>
+	<script src="./js/catalog.js"></script>
 </body>
 
 </html>

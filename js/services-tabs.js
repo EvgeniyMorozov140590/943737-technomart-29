@@ -2,7 +2,7 @@ var serviceTabs = (function() {
 	let activeTabIndex = 0;
 
 	return {
-		create: function (config) {
+		create: function(config) {
 			init(config);
 		}
 	}

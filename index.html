@@ -11,11 +11,12 @@
 <body class="page-body">
 	<header class="main-header">
 		<div class="container flexible-relativity-end">
-			<a class="logo-wrapper logo-left-position" href="index.html">
+			<a class="logo-wrapper logo-left-position" href="index.html" aria-label="техномарт">
 				<img class="header-logo" src="./img/logo-text.svg" width="107" height="17" alt="техномарт">
 			</a>
-			<div class="search-input-wrapper">				
-				<input class="field field-search" type="search" name="search-text" placeholder="Поиск:">
+			<div class="search-input-wrapper">
+				<label for="search" aria-label="Поиск"></label>				
+				<input class="field field-search" id="search" type="search" name="search-text" placeholder="Поиск:">
 				<svg class="icon-search" width="17" height="17" viewBox="0 0 17 17" xmlns="http://www.w3.org/2000/svg">
 					<path fill-rule="evenodd" clip-rule="evenodd" d="M13.458 12.044L17 15.586L15.586 17L12.044 13.458C10.782 14.421 9.21 15 7.5 15C3.35786 15 0 11.6421 0 7.5C0 3.35786 3.35786 0 7.5 0C11.6421 0 15 3.35786 15 7.5C15.0001 9.14309 14.4581 10.7403 13.458 12.044ZM7.5 2C4.467 2 2 4.467 2 7.5C2.00331 10.5362 4.4638 12.9967 7.5 13C10.532 13 13 10.532 13 7.5C13 4.467 10.532 2 7.5 2Z"/>
 				</svg>
@@ -96,12 +97,12 @@
 					</li>
 				</ul>
 				<div class="slider-controls">
-					<button class="button slider-previous-button" type="button"></button>
-					<button class="button slider-next-button" type="button"></button>
+					<button class="button slider-previous-button" type="button" aria-label="предидущий слад"></button>
+					<button class="button slider-next-button" type="button" aria-label="следующий слайд"></button>
 					<a class="attention-link slider-show-catalog" href="catalog.html">открыть каталог</a>
 					<div class="slide-show-wrapper flexible-start-center">
-						<button class="button slider-show-button slider-show-button-active" type="button"></button>
-						<button class="button slider-show-button" type="button"></button>
+						<button class="button slider-show-button slider-show-button-active" type="button" aria-label="показать слайд"></button>
+						<button class="button slider-show-button" type="button" aria-label="показать слайд"></button>
 					</div>
 				</div>
 			</article>
@@ -124,8 +125,8 @@
 			<ul class="list product-list flexible-between-center">
 				<li class="product-item flexible-column-center">
 					<div class="product-action-wrapper">
-						<button class="button button-buy">купить</button>
-						<button class="button button-bookmarks">закладки</button>
+						<button class="button button-buy" aria-label="купить">купить</button>
+						<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 					</div>
 					<div class="product-image-resize flexible-centered">
 						<img src="./img/bfg9000.jpg" width="184" height="164" alt="bfg 9000">
@@ -141,8 +142,8 @@
 				</li>
 				<li class="product-item flexible-column-center badge-new">
 					<div class="product-action-wrapper">
-						<button class="button button-buy">купить</button>
-						<button class="button button-bookmarks">закладки</button>
+						<button class="button button-buy" aria-label="купить">купить</button>
+						<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 					</div>
 					<div class="product-image-resize flexible-centered">
 						<img src="./img/bfg3000.jpg" width="127" height="112" alt="bfg 3000">
@@ -158,8 +159,8 @@
 				</li>
 				<li class="product-item flexible-column-center">
 					<div class="product-action-wrapper">
-						<button class="button button-buy">купить</button>
-						<button class="button button-bookmarks">закладки</button>
+						<button class="button button-buy" aria-label="купить">купить</button>
+						<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 					</div>
 					<div class="product-image-resize flexible-centered">
 						<img src="./img/bfg6000.jpg" width="144" height="128" alt="bfg 6000">
@@ -175,8 +176,8 @@
 				</li>
 				<li class="product-item flexible-column-center badge-new">
 					<div class="product-action-wrapper">
-						<button class="button button-buy">купить</button>
-						<button class="button button-bookmarks">закладки</button>
+						<button class="button button-buy" aria-label="купить">купить</button>
+						<button class="button button-bookmarks" aria-label="закладки">закладки</button>
 					</div>
 					<div class="product-image-resize flexible-centered">
 						<img src="./img/bfg2000.jpg" width="127" height="112" alt="bfg 2000">
@@ -198,42 +199,42 @@
 			</div>
 			<ul class="list manufacturers-list flexible-between-center">
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.bosch.ru/" target="_blank" aria-label="перейти на сайт bosch">
 						<img src="./img/bosch_logo.jpg" width="126" height="37" alt="bosch logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.makita.ru/" target="_blank" aria-label="перейти на сайт makita">
 						<img src="./img/makita_logo.jpg" width="123" height="40" alt="makita logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://shop.dewalt.ru/" target="_blank" aria-label="перейти на сайт dewalt">
 						<img src="./img/dewalt_logo.jpg" width="146" height="44" alt="dewalt logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.interskol.ru/" target="_blank" aria-label="перейти на сайт interskol">
 						<img src="./img/interskol_logo.jpg" width="200" height="76" alt="interskol logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.hitachi.ru/ru" target="_blank" aria-label="перейти на сайт hitachi">
 						<img src="./img/hitachi_logo.jpg" width="169" height="31" alt="hitachi logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.lg.com/ru" target="_blank" aria-label="перейти на сайт lg">
 						<img src="./img/lg_logo.jpg" width="121" height="73" alt="lg logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.aeg-powertools.eu/ru-ru" target="_blank" aria-label="перейти на сайт aeg">
 						<img src="./img/aeg_logo.jpg" width="151" height="98" alt="aeg logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
-					<a href="">
+					<a href="https://www.metabo.com/ru/ru/" aria-label="перейти на сайт metabo">
 						<img src="./img/metabo_logo.jpg" width="206" height="73" alt="metabo logo">
 					</a>
 				</li>
@@ -307,15 +308,17 @@
 					Вы можете забрать товар сами,<br>
 					заехав в наш офис:
 				</p>
-				<img src="./img/map.jpg" width="300" height="158" alt="мы на карте">
-				<a class="attention-link" href="">Заблудились? Напишите НАМ!</a>
+				<a class="show-map" href="" aria-label="показать магазин на карте">
+					<img src="./img/map.jpg" width="300" height="158" alt="мы на карте">
+				</a>
+				<a class="attention-link show-write-us" href="">Заблудились? Напишите НАМ!</a>
 			</section>
 		</div>
 	</main>
 	<footer>
 		<div class="footer-top-container">
 			<div class="container flexible-between-end">
-				<a class="logo-wrapper footer-logo-resize" href="index.html">
+				<a class="logo-wrapper footer-logo-resize" href="index.html" aria-label="техномарт">
 					<img class="footer-logo" src="./img/logo-text.svg" width="136" height="21" alt="техномарт">
 				</a>
 				<section class="footer-nav">
@@ -366,13 +369,13 @@
 					<h2 class="visibility-hidden">Мы в соц.сетях</h2>
 					<ul class="list social-network-list flexible-between-center">
 						<li>
-							<a class="social-link icon-vk" href="#"></a>
+							<a class="social-link icon-vk" href="#" aria-label="мы вк"></a>
 						</li>
 						<li>
-							<a class="social-link icon-facebook" href="#"></a>
+							<a class="social-link icon-facebook" href="#" aria-label="мы в facebook"></a>
 						</li>
 						<li>
-							<a class="social-link icon-instagram" href="#"></a>
+							<a class="social-link icon-instagram" href="#" aria-label="мы в instagram"></a>
 						</li>
 					</ul>
 				</section>
@@ -382,13 +385,59 @@
 				</p>
 				<p class="developed">
 					Разработано —<br>
-					<a class="footer-bottom-link" href="http://htmlacademy.ru">htmlacademy.ru</a>
+					<a class="footer-bottom-link" href="http://htmlacademy.ru/intensive/htmlcss">htmlacademy.ru</a>
 				</p>
 			</div>
 		</div>
 	</footer>
+
+	<section class="modal modal-map visibility-hidden">
+		<h2 class="visibility-hidden">Как до нас добраться</h2>
+		<iframe
+			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123993!2d30.320894616125116!3d59.9387968690479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601973485504!5m2!1sru!2sru"
+			width="943" height="443" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+			tabindex="0">
+		</iframe>
+		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+	</section>
+
+	<section class="modal modal-write-us visibility-hidden">
+		<h2 class="visibility-hidden">Напишите нам</h2>
+		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+		<form action="https://echo.htmlacademy.ru" method="POST">
+			<div class="modal-content flexible-between-center">
+				<p>
+					<label class="input-label" for="write-us-fullname">Ваше имя:</label>
+					<input class="form-input" type="text" placeholder="Имя Фамилия" name="name" id="write-us-fullname" required>
+				</p>
+				<p>
+					<label class="input-label" for="write-us-email">Ваш e-mail:</label>
+					<input class="form-input" type="email" placeholder="email@example.com" name="email" id="write-us-email" required>
+				</p>
+				<p>
+					<label class="input-label" for="write-us-message-text">Текст письма:</label>
+					<textarea class="form-input input-textarea" placeholder="В свободной форме" name="message-text" id="write-us-message-text" required></textarea>
+				</p>
+			</div>
+			<div class="modal-actions flexible-centered">
+				<button class="button modal-action-button" type="submit">отправить</button>
+			</div>
+		</form>
+	</section>
+
+	<section class="modal modal-add-into-cart visibility-hidden">
+		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+		<div class="modal-content flexible-centered">
+			<h2>Товар добавлен в корзину!</h2>
+		</div>
+		<div class="modal-actions flexible-centered">
+			<button class="button modal-action-button" type="submit">оформить заказ</button>
+			<button class="button modal-action-button modal-cancel-button" type="submit">продолжить покупки</button>
+		</div>
+	</section>
 	<script src="./js/product-slider.js"></script>
 	<script src="./js/services-tabs.js"></script>
+	<script src="./js/modal.js"></script>
 	<script src="./js/index.js"></script>
 </body>
 
