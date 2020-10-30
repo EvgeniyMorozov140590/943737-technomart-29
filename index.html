@@ -3,8 +3,8 @@
 
 <head>
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="./css/style.min.css">
 	<link rel="stylesheet" href="./css/normalize.css">
+	<link rel="stylesheet" href="./css/style.min.css">
 	<title>HTML Academy: Техномарт</title>
 </head>
 
@@ -200,42 +200,42 @@
 			<ul class="list manufacturers-list flexible-between-center">
 				<li class="manufacturers-list-item">
 					<a href="https://www.bosch.ru/" target="_blank" aria-label="перейти на сайт bosch">
-						<img src="./img/bosch_logo.jpg" width="126" height="37" alt="bosch logo">
+						<img src="./img/bosch-logo.jpg" width="126" height="37" alt="bosch logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.makita.ru/" target="_blank" aria-label="перейти на сайт makita">
-						<img src="./img/makita_logo.jpg" width="123" height="40" alt="makita logo">
+						<img src="./img/makita-logo.jpg" width="123" height="40" alt="makita logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://shop.dewalt.ru/" target="_blank" aria-label="перейти на сайт dewalt">
-						<img src="./img/dewalt_logo.jpg" width="146" height="44" alt="dewalt logo">
+						<img src="./img/dewalt-logo.jpg" width="146" height="44" alt="dewalt logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.interskol.ru/" target="_blank" aria-label="перейти на сайт interskol">
-						<img src="./img/interskol_logo.jpg" width="200" height="76" alt="interskol logo">
+						<img src="./img/interskol-logo.jpg" width="200" height="76" alt="interskol logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.hitachi.ru/ru" target="_blank" aria-label="перейти на сайт hitachi">
-						<img src="./img/hitachi_logo.jpg" width="169" height="31" alt="hitachi logo">
+						<img src="./img/hitachi-logo.jpg" width="169" height="31" alt="hitachi logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.lg.com/ru" target="_blank" aria-label="перейти на сайт lg">
-						<img src="./img/lg_logo.jpg" width="121" height="73" alt="lg logo">
+						<img src="./img/lg-logo.jpg" width="121" height="73" alt="lg logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.aeg-powertools.eu/ru-ru" target="_blank" aria-label="перейти на сайт aeg">
-						<img src="./img/aeg_logo.jpg" width="151" height="98" alt="aeg logo">
+						<img src="./img/aeg-logo.jpg" width="151" height="98" alt="aeg logo">
 					</a>
 				</li>
 				<li class="manufacturers-list-item">
 					<a href="https://www.metabo.com/ru/ru/" aria-label="перейти на сайт metabo">
-						<img src="./img/metabo_logo.jpg" width="206" height="73" alt="metabo logo">
+						<img src="./img/metabo-logo.jpg" width="206" height="73" alt="metabo logo">
 					</a>
 				</li>
 			</ul>
@@ -395,16 +395,16 @@
 		<h2 class="visibility-hidden">Как до нас добраться</h2>
 		<iframe
 			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.5989424123993!2d30.320894616125116!3d59.9387968690479!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca5ba729%3A0xea9c53d4493c879f!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LCDQodCw0L3QutGCLdCf0LXRgtC10YDQsdGD0YDQsywgMTkxMTg2!5e0!3m2!1sru!2sru!4v1601973485504!5m2!1sru!2sru"
-			width="943" height="443" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+			width="943" height="443" style="border:0;" allowfullscreen="" aria-hidden="false"
 			tabindex="0">
 		</iframe>
-		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+		<button class="button modal-close" type="button" aria-label="закрыть"></button>
 	</section>
 
 	<section class="modal modal-write-us visibility-hidden">
 		<h2 class="visibility-hidden">Напишите нам</h2>
-		<button class="button modal-close" type="button" arial-label="закрыть"></button>
-		<form action="https://echo.htmlacademy.ru" method="POST">
+		<button class="button modal-close" type="button" aria-label="закрыть"></button>
+		<form class="form-write-us" action="https://echo.htmlacademy.ru" method="POST">
 			<div class="modal-content flexible-between-center">
 				<p>
 					<label class="input-label" for="write-us-fullname">Ваше имя:</label>
@@ -416,7 +416,7 @@
 				</p>
 				<p>
 					<label class="input-label" for="write-us-message-text">Текст письма:</label>
-					<textarea class="form-input input-textarea" placeholder="В свободной форме" name="message-text" id="write-us-message-text" required></textarea>
+					<textarea class="form-input input-textarea" placeholder="В свободной форме" name="message" id="write-us-message-text" required></textarea>
 				</p>
 			</div>
 			<div class="modal-actions flexible-centered">
@@ -426,7 +426,7 @@
 	</section>
 
 	<section class="modal modal-add-into-cart visibility-hidden">
-		<button class="button modal-close" type="button" arial-label="закрыть"></button>
+		<button class="button modal-close" type="button" aria-label="закрыть"></button>
 		<div class="modal-content flexible-centered">
 			<h2>Товар добавлен в корзину!</h2>
 		</div>

@@ -9,6 +9,9 @@ var Modal = function (modalSelector) {
         },
         close: function() {
             close();
+        },
+        getModalElement: function () {
+            return modalElement;
         }
     }
 

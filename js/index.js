@@ -16,6 +16,11 @@ const writeUsModal = new Modal('.modal-write-us');
 const showMap = document.querySelector('.show-map');
 const showWriteUs = document.querySelector('.show-write-us');
 const addIntoCartModal = new Modal('.modal-add-into-cart');
+const writeUsForm = document.querySelector('.form-write-us');
+
+writeUsForm.elements.name.addEventListener('invalid', invalidFormEffect);
+writeUsForm.elements.email.addEventListener('invalid', invalidFormEffect);
+writeUsForm.elements.message.addEventListener('invalid', invalidFormEffect);
 
 document.addEventListener('click', (event) => {
     isBuyButton = event.target.classList.contains('button-buy');
@@ -44,3 +49,14 @@ document.addEventListener('keydown', (event) => {
 
 productSlider.create(sliderConfig);
 serviceTabs.create(serviceTabsConfig);
+
+function invalidFormEffect() {
+    const modalElement = writeUsModal.getModalElement();
+    
+    modalElement.classList.add('shake');
+
+    setTimeout(() => {
+        modalElement.classList.remove('shake');
+        modalElement.classList.remove('modal-show');
+    }, 600);
+}
