@@ -1340,9 +1340,9 @@ body {
 	text-decoration: none;
 }
 
-.sort-option:hover {
+.sort-option:hover:not(.sort-option-active) {
 	border-bottom: 1px solid var(--basic-red);
-	color: var(--basic-black	);
+	color: var(--basic-black);
 	opacity: 1;
 }
 
@@ -1357,7 +1357,7 @@ li .sort-option-active {
 	transform: rotate(180deg);
 }
 
-.sort-direction:hover path {
+.sort-direction:hover:not(.sort-direction-active) path {
 	fill: var(--basic-black);
 }
 
